@@ -14,4 +14,7 @@ public class Person extends Contact {
         return firstName;
     }
 
+    public String getLastName() {
+        return lastName;
+    }
 }
