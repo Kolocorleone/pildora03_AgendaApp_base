@@ -8,5 +8,7 @@ public abstract class Contact {
         this.telephone = telephone;
         this.email = email;
     }
-
+    public Address getAddress() {
+        return address;
+    }
 }
