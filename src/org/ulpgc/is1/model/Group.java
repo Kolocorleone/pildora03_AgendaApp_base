@@ -5,22 +5,30 @@ import java.util.List;
 
 public class Group {
     private final String name;
-    private List<Contact> contacts;
+    private List<Contact> contactList;
 
     public Group(String name) {
         this.name = name;
-        this.contacts = new ArrayList<>();
-    }
-
-    public void addContacts(Contact contact) {
-        contacts.add(contact);
-    }
-
-    public List<Contact> getContacts() {
-        return contacts;
+        this.contactList = new ArrayList<>();
     }
 
     public String getName() {
         return name;
     }
+
+    public void addContact(Contact contact) {
+        contactList.add(contact);
+    }
+    public void removeContact(Contact contact) {
+        contactList.remove(contact);
+    }
+    public int contactCount() {
+        return contactList.size();
+    }
+
+    public List<Contact> getContacts() {
+        return contactList;
+    }
+
+
 }
