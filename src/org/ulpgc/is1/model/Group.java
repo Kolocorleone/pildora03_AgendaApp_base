@@ -17,7 +17,9 @@ public class Group {
     }
 
     public void addContact(Contact contact) {
-        contactList.add(contact);
+        if(!contactList.contains(contact)) {
+            contactList.add(contact);
+        }
     }
     public void removeContact(Contact contact) {
         contactList.remove(contact);
